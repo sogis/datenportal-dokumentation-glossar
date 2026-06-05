@@ -1,0 +1,67 @@
+= Rollen und Verantwortlichkeiten
+:description: Data Owner, Data Steward und Data Custodian im Datenportal-Projekt.
+
+Die Begriffe Data Owner, Data Steward und Data Custodian stammen aus der Data-Governance-Sprache. Sie beschreiben unterschiedliche Verantwortungsarten: fachliche Verantwortung, fachlich/semantische Pflege und technische Bereitstellung.
+
+include::_partials/rollen-data-governance.adoc[]
+
+== Data Owner / Datenherr / Zuständige Stelle
+
+Der **Data Owner** trägt die fachliche Verantwortung für die Daten. Auf Deutsch kann im Projektkontext auch **Datenherr** gesagt werden; im geoinformationsrechtlichen Kontext ist oft **Zuständige Stelle** anschlussfähiger.
+
+Der Data Owner entscheidet oder verantwortet fachlich, ob ein Datenangebot publiziert werden darf, welche fachliche Bedeutung die Daten haben, wer zuständig ist, welche Qualitätsanforderungen gelten und welche Zugangs- oder Nutzungsbedingungen relevant sind.
+
+.Beispiele
+* Die Fachstelle Statistik ist Data Owner für Einwohnerstatistiken.
+* Die für eine Geodatenebene zuständige Fachstelle ist Data Owner für diese Daten.
+* Bei gesetzlichen Aufgaben kann die Zuständigkeit direkt aus einer Verordnung, einem Gesetz oder einem Leistungsauftrag folgen.
+
+[IMPORTANT]
+====
+Für die Kommunikation mit Fachstellen ist «Zuständige Stelle» oft der anschlussfähigste Begriff. «Datenherr» ist als verständliche deutsche Entsprechung für Data Owner möglich.
+====
+
+== Data Steward
+
+Der **Data Steward** sorgt für die fachliche, semantische und redaktionelle Qualität der Daten und Metadaten.
+
+Der Data Steward arbeitet nahe am Inhalt. Er oder sie klärt Begriffe, Attributbedeutungen, fachliche Regeln, Beschreibungen, Kategorien, Aktualität und Verständlichkeit. Der Data Steward achtet darauf, dass Daten und Metadaten fachlich korrekt, konsistent und für Nutzende nachvollziehbar sind.
+
+.Beispiele
+* Eine Fachperson prüft, ob Titel, Beschreibung, Kategorien und Aktualisierungsfrequenz im Datenblatt fachlich stimmen.
+* Eine metadatenverantwortliche Person stellt sicher, dass externe Nutzende den Inhalt eines Datenthemas verstehen.
+* Eine Fachperson klärt, was ein Attribut bedeutet und ob dessen Beschreibung korrekt ist.
+
+== Data Custodian
+
+Der **Data Custodian** sorgt für die technische Aufbewahrung, Verarbeitung, Bereitstellung, Sicherheit und Verfügbarkeit der Daten.
+
+Der Data Custodian betreibt oder betreut die technische Infrastruktur: Datenbanken, Dateispeicher, Schnittstellen, Pipelines, Publikationsprozesse, Zugriffsmechanismen, Backups, technische Überwachung und technische Fehlerbehebung.
+
+.Beispiele
+* Ein GIS-/IT-Team betreibt die Datenbank, die Downloadprozesse und die APIs.
+* Ein Plattformteam sorgt dafür, dass CSV-, Parquet- oder GeoPackage-Dateien regelmässig erzeugt und publiziert werden.
+* Ein Betriebsdienst überwacht Schnittstellen, Speicherorte, Zugriffe und technische Fehler.
+
+== Abgrenzung Data Steward und Data Custodian
+
+[cols="1,2,2",options="header"]
+|===
+|Aspekt |Data Steward |Data Custodian
+
+|Fokus
+|Bedeutung, Qualität, Verständlichkeit und fachliche Konsistenz.
+|Technische Speicherung, Verarbeitung, Betrieb und Verfügbarkeit.
+
+|Typische Fragen
+|Was bedeuten die Attribute? Ist die Beschreibung korrekt? Ist die Aktualität plausibel?
+|Wo liegen die Daten? Läuft die Pipeline? Funktionieren Download, API, Backup und Monitoring?
+
+|Bei uns
+|Eigene fachlich/redaktionelle Rolle.
+|Eigene technische/betriebliche Rolle; nicht dieselbe Stelle oder Person wie der Steward.
+|===
+
+== Merksatz
+
+Bei uns ist der Data Steward nicht der Data Custodian. Steward bedeutet fachliche, semantische und redaktionelle Qualität. Custodian bedeutet technische Bereitstellung, Sicherheit und Betrieb.

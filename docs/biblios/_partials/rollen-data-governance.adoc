@@ -1,0 +1,11 @@
+[sidebar]
+.Rollen kurz erklärt
+--
+**Data Owner / Datenherr / Zuständige Stelle** trägt die fachliche Verantwortung.
+
+**Data Steward** sorgt für fachliche, semantische und redaktionelle Qualität.
+
+**Data Custodian** sorgt für technische Bereitstellung, Sicherheit und Betrieb.
+
+Bei uns sind Data Steward und Data Custodian nach dieser Definition nicht dieselbe Stelle beziehungsweise nicht dieselbe Person.
+--

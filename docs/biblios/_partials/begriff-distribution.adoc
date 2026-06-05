@@ -1,0 +1,5 @@
+[sidebar]
+.Begriffsklärung: Distribution
+--
+Eine **Distribution** ist die konkrete technische Bereitstellungsform eines Datensatzes oder einer Ausgabe. Beispiele sind CSV, XLSX, Parquet, GeoPackage, ein API-Endpunkt, WFS, WMS oder eine Download-URL.
+--

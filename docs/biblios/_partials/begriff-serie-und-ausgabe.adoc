@@ -1,0 +1,7 @@
+[sidebar]
+.Begriffsklärung: Datensatz-Serie und Ausgabe
+--
+Eine **Datensatz-Serie** bündelt mehrere zusammengehörige Datensätze oder Ausgaben nach einem wiederkehrenden Muster, zum Beispiel Jahresstände oder Stichtage.
+
+Eine **Ausgabe** ist der einzelne konkrete Datenstand innerhalb einer Serie, zum Beispiel «Einwohnerstatistik 2024».
+--

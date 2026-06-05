@@ -1,0 +1,9 @@
+[sidebar]
+.Begriffsklärung: Datenthema und Datensatz
+--
+Ein **Datenthema** ist das fachliche Datenangebot, das Nutzende im Portal suchen, zum Beispiel «Schulstandorte» oder «Bauzonen».
+
+Ein **Datensatz** ist die Metadaten-Einheit beziehungsweise das Katalogobjekt, mit dem dieses Datenangebot beschrieben wird.
+
+In einfachen Fällen gilt: ein Datenthema = ein Datensatz. Bei Serien, Ausgaben und mehreren technischen Bereitstellungsformen lohnt sich die genauere Unterscheidung.
+--

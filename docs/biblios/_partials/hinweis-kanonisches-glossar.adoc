@@ -1,0 +1,4 @@
+[NOTE]
+====
+Die vollständigen Definitionen stehen im zentralen Glossar. Diese Seite verwendet nur die Begriffe, die für den jeweiligen Arbeitskontext nötig sind.
+====

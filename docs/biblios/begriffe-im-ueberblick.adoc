@@ -1,0 +1,63 @@
+= Begriffe im Datenportal
+:description: Einstieg in die wichtigsten Begriffe des Datenportal-Projekts.
+
+Diese Seite erklärt die wichtigsten Begriffe des Datenportal-Projekts in Alltagssprache. Sie dient als Einstieg für Fachstellen, Datenlieferanten, Nutzende, Entwicklung und Betrieb.
+
+include::_partials/hinweis-kanonisches-glossar.adoc[]
+
+== Grundsatz für die Sprache im Projekt
+
+Im Portal und in der Zusammenarbeit mit Fachstellen verwenden wir vorzugsweise verständliche fachliche Begriffe. **Datenthema** ist der bessere Alltagsbegriff, wenn das fachliche Datenangebot gemeint ist. **Datensatz** verwenden wir, wenn die Metadaten-Einheit, das Katalogobjekt oder die DCAT-nahe Modellierung gemeint ist.
+
+In einfachen Fällen gilt: ein Datenthema = ein Datensatz. Bei Serien, Ausgaben und mehreren technischen Bereitstellungsformen lohnt sich die genauere Unterscheidung.
+
+== Die wichtigsten Begriffe
+
+[cols="1,2,2",options="header"]
+|===
+|Begriff |Kurz erklärt |Leitfrage
+
+|Datenthema
+|Fachliches Datenangebot im Portal.
+|Worum geht es fachlich?
+
+|Datensatz
+|Beschriebene Sammlung von Daten mit eigenen Metadaten.
+|Welche Daten werden beschrieben?
+
+|Datensatz-Serie
+|Gruppe zusammengehöriger Datensätze oder Ausgaben.
+|Gibt es eine wiederkehrende Reihe?
+
+|Ausgabe
+|Konkreter Datensatz innerhalb einer Serie.
+|Welcher Jahrgang, Stichtag oder Datenstand ist gemeint?
+
+|Distribution
+|Technische Bereitstellungsform eines Datensatzes.
+|Wie bekomme oder nutze ich die Daten?
+
+|Datenblatt
+|Strukturierte Datei mit den Metadaten eines Datenangebots.
+|Welche Angaben liefert die zuständige Fachstelle?
+
+|Datenblatt-Editor
+|Anwendung zum Erstellen und Bearbeiten des Datenblatts.
+|Wo werden die Angaben erfasst?
+|===
+
+== Merksätze
+
+* Ein Datenthema ist das, was Nutzende im Portal suchen.
+* Ein Datensatz ist das, was wir mit Metadaten beschreiben.
+* Eine Datensatz-Serie bündelt mehrere zusammengehörige Datensätze oder Ausgaben.
+* Eine Ausgabe ist ein einzelner konkreter Datenstand innerhalb einer Serie.
+* Eine Distribution ist die Datei, Schnittstelle oder technische Form, über die ein Datensatz genutzt wird.
+* Ein Datenblatt ist die strukturierte Datei, mit der Metadaten redaktionell gepflegt werden.
+* Der Datenblatt-Editor ist das Werkzeug zur Bearbeitung des Datenblatts.
+
+== Weiterführende Seiten
+
+* xref:../referenz/glossar.adoc[Glossar]
+* xref:rollen-und-verantwortlichkeiten.adoc[Rollen und Verantwortlichkeiten]
+* xref:../datenformate-und-metadaten/datensatz-serie-ausgabe-distribution.adoc[Datensatz, Serie, Ausgabe und Distribution]

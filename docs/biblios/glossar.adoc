@@ -1,0 +1,367 @@
+= Glossar Datenportal
+:description: Gemeinsames Projektvokabular für das Datenportal.
+
+Arbeitsfassung für ein gemeinsames Projektvokabular.
+
+Stand: 29. Mai 2026
+
+== Zweck
+
+Dieses Glossar legt die wichtigsten Begriffe für das Datenportal-Projekt fest. Es soll helfen, dass Fachstellen, Datenlieferanten, Entwicklung, Betrieb und Metadatenverantwortliche dieselben Begriffe gleich verwenden.
+
+Die Definitionen sind bewusst praxisnah formuliert. Sie sind als Projektvokabular gedacht und können später mit formalen Referenzen, zum Beispiel DCAT-AP-CH, rechtlichen Grundlagen oder internen Weisungen, ergänzt werden.
+
+== Grundsatz für die Sprache im Projekt
+
+Im Portal und in der Zusammenarbeit mit Fachstellen verwenden wir vorzugsweise verständliche fachliche Begriffe. **Datenthema** ist der bessere Alltagsbegriff, wenn das fachliche Datenangebot gemeint ist. **Datensatz** verwenden wir, wenn die Metadaten-Einheit, das Katalogobjekt oder die DCAT-nahe Modellierung gemeint ist.
+
+In einfachen Fällen gilt: ein Datenthema = ein Datensatz. Bei Serien, Ausgaben und mehreren technischen Bereitstellungsformen lohnt sich die genauere Unterscheidung.
+
+== Begriffe in der Übersicht
+
+[cols="1,2,2",options="header"]
+|===
+|Begriff |Kurzdefinition |Leitfrage
+
+|Datenthema
+|Fachliches Datenangebot im Portal.
+|Worum geht es fachlich?
+
+|Dataset / Datensatz
+|Beschriebene Sammlung von Daten mit eigenen Metadaten.
+|Welche Daten werden beschrieben?
+
+|Dataset-Serie / Datensatz-Serie
+|Gruppe zusammengehöriger Datensätze oder Ausgaben.
+|Gibt es eine wiederkehrende Reihe?
+
+|Ausgabe innerhalb einer Serie
+|Konkreter Datensatz innerhalb einer Serie.
+|Welcher Jahrgang, Stichtag oder Datenstand ist gemeint?
+
+|Distribution
+|Technische Bereitstellungsform eines Datensatzes.
+|Wie bekomme oder nutze ich die Daten?
+
+|Parquet
+|Spaltenorientiertes, komprimiertes Dateiformat für effiziente Auswertungen.
+|Welches Format eignet sich für performante Analysen?
+
+|Datenblatt
+|Strukturierte Datei mit den Metadaten eines Datenangebots.
+|Welche Angaben liefert die zuständige Fachstelle?
+
+|Datenblatt-Editor
+|Anwendung zum Erstellen und Bearbeiten des Datenblatts.
+|Wo werden die Angaben erfasst?
+
+|Data Owner / Datenherr / Zuständige Stelle
+|Fachlich verantwortliche Stelle für die Daten.
+|Wer trägt die fachliche Verantwortung?
+
+|Data Steward
+|Rolle für fachliche, semantische und redaktionelle Datenqualität.
+|Wer sorgt dafür, dass Inhalt und Beschreibung stimmen?
+
+|Data Custodian
+|Rolle für technische Aufbewahrung, Betrieb und Bereitstellung.
+|Wer sorgt technisch dafür, dass die Daten verfügbar sind?
+|===
+
+== Datenthema
+
+**Kurzdefinition:** Ein Datenthema ist die fachliche, für Nutzende verständliche Beschreibung eines Datenangebots im Datenportal.
+
+**Erklärung:** Es beantwortet die Frage: Worum geht es fachlich? Ein Datenthema ist primär ein fachlicher Portalbegriff. Es hilft in der Kommunikation mit Datenlieferanten, Fachstellen und Nutzenden.
+
+**Abgrenzung / Verhältnis:** In einfachen Fällen entspricht ein Datenthema genau einem Datensatz. In komplexeren Fällen kann ein Datenthema eine Datensatz-Serie, mehrere Ausgaben oder mehrere eng zusammengehörige Datensätze umfassen.
+
+.Beispiele
+* Einwohnerstatistik
+* Bauzonen
+* Schulstandorte
+* Velounfälle
+* Orthofotos
+
+[NOTE]
+====
+Gegenüber Fachstellen und Nutzenden sprechen wir vorzugsweise von Datenthema, wenn das fachliche Datenangebot gemeint ist.
+====
+
+== Dataset / Datensatz
+
+**Kurzdefinition:** Ein Datensatz ist eine klar beschriebene Sammlung von Daten, die als fachliche und organisatorische Einheit publiziert, gepflegt und gefunden werden kann.
+
+**Erklärung:** Ein Datensatz hat eigene Metadaten, zum Beispiel Titel, Beschreibung, Herausgeber, Zuständigkeit, Aktualisierungsfrequenz, thematische Einordnung, räumliche und zeitliche Abdeckung sowie Zugangs- und Nutzungsbedingungen.
+
+**Abgrenzung / Verhältnis:** Ein Datensatz ist noch nicht zwingend eine Datei. Er beschreibt das Datenangebot als inhaltliche Einheit. Die konkreten Dateien, APIs oder Downloadformate werden als Distributionen beschrieben.
+
+.Beispiele
+* Bauzonen Kanton Solothurn
+* Schulstandorte Kanton Solothurn
+* Einwohnerstatistik nach Gemeinde
+* Orthofoto 2025
+
+[NOTE]
+====
+Der Begriff Datensatz wird verwendet, wenn die DCAT-nahe Metadaten-Einheit oder das Katalogobjekt gemeint ist.
+====
+
+== Dataset-Serie / Datensatz-Serie
+
+**Kurzdefinition:** Eine Datensatz-Serie ist eine Gruppe von Datensätzen, die zusammengehören und nach einem wiederkehrenden Muster publiziert werden.
+
+**Erklärung:** Sie beantwortet die Frage: Gibt es mehrere zusammengehörige Ausgaben desselben Datenangebots? Serien entstehen oft durch periodische Publikation, wiederkehrende Erhebungen, Jahresstände, Stichtage oder fortlaufende Versionen.
+
+**Abgrenzung / Verhältnis:** Eine Datensatz-Serie ist eine übergeordnete fachliche Klammer. Sie ist nicht einfach ein ZIP mit mehreren Dateien.
+
+.Beispiele
+* Orthofotos Kanton Solothurn mit den Ausgaben 2021, 2023 und 2025.
+* Einwohnerstatistik mit den Ausgaben 2022, 2023 und 2024.
+* Gemeindefinanzen nach Rechnungsjahr.
+
+[NOTE]
+====
+Eine Datensatz-Serie verwenden wir dann, wenn einzelne Ausgaben eigenständig auffindbar, zitierbar oder beschreibbar sein sollen.
+====
+
+== Ausgabe innerhalb einer Serie
+
+**Kurzdefinition:** Eine Ausgabe ist ein einzelner konkreter Datensatz innerhalb einer Datensatz-Serie.
+
+**Erklärung:** Sie beantwortet die Frage: Welche konkrete Ausgabe der Serie ist gemeint? Eine Ausgabe kann sich durch Jahr, Stichtag, Erhebungsperiode, Version, Publikationslauf oder Datenstand unterscheiden.
+
+**Abgrenzung / Verhältnis:** Eine Ausgabe ist fachlich ein Datensatz. Sie kann wiederum mehrere Distributionen haben, zum Beispiel CSV, GeoPackage, WMS oder API.
+
+.Beispiele
+* Orthofoto 2025 als Ausgabe der Serie Orthofotos.
+* Einwohnerstatistik 2024 als Ausgabe der Serie Einwohnerstatistik.
+* Gemeindefinanzen Rechnungsjahr 2023 als Ausgabe der Serie Gemeindefinanzen.
+
+[NOTE]
+====
+Im Portal verwenden wir Ausgabe, wenn eine einzelne konkrete Publikation innerhalb einer Serie gemeint ist. Alternativ kann präziser von Datensatz-Ausgabe gesprochen werden.
+====
+
+== Distribution
+
+**Kurzdefinition:** Eine Distribution ist eine konkrete technische Bereitstellungsform eines Datensatzes oder einer Ausgabe.
+
+**Erklärung:** Sie beantwortet die Frage: Wie kann ich die Daten beziehen oder nutzen? Ein Datensatz kann mehrere Distributionen haben. Diese enthalten fachlich denselben oder weitgehend denselben Dateninhalt, unterscheiden sich aber in Format, Zugriffsmethode oder technischer Aufbereitung.
+
+**Abgrenzung / Verhältnis:** Eine Distribution ist nicht dasselbe wie eine Ausgabe. Eine Ausgabe beschreibt, welcher Datenstand gemeint ist. Eine Distribution beschreibt, in welcher technischen Form dieser Datenstand verfügbar ist.
+
+.Beispiele
+* CSV-Datei
+* Excel-Datei
+* Parquet-Datei
+* GeoPackage
+* Shapefile
+* JSON oder GeoJSON
+* RDF/Turtle
+* Download-URL
+* API-Endpunkt
+* WFS
+* WMS
+* Kartenansicht
+
+[NOTE]
+====
+Distributionen beschreiben immer den Zugang oder das Format eines Datensatzes beziehungsweise einer Ausgabe.
+====
+
+== Parquet
+
+**Kurzdefinition:** Parquet ist ein offenes, spaltenorientiertes und komprimiertes Dateiformat für tabellarische beziehungsweise strukturierte Daten.
+
+**Erklärung:** Parquet ist besonders praktisch für Auswertungen, weil Analysewerkzeuge nur die benötigten Spalten lesen müssen. Bei grossen Tabellen kann das Abfragen, Filtern und Aggregieren deutlich effizienter sein als bei zeilenorientierten Textformaten.
+
+Parquet speichert Datentypen und Schema mit, unterstützt Kompression und ist in vielen Analysewerkzeugen gut nutzbar, zum Beispiel mit DuckDB, Python/Pandas, Polars, Spark oder modernen Data-Lake-Werkzeugen.
+
+**Abgrenzung / Verhältnis:** Parquet ist nicht primär ein Format zum manuellen Bearbeiten in einer Tabellenkalkulation. Gegenüber CSV ist Parquet robuster, weil Datentypen, Schema und Kompression Teil des Formats sind und typische CSV-Probleme wie Trennzeichen, Encoding, Dezimaltrennzeichen oder fehlende Typinformation reduziert werden.
+
+Gegenüber XLSX ist Parquet für automatisierte, wiederholbare und grössere Auswertungen besser geeignet, weil es keine Tabellenkalkulationslogik, Formatierungen, Formeln oder mehrere Arbeitsblätter interpretieren muss. CSV bleibt sinnvoll für einfache, sehr breit verständliche Exporte; XLSX bleibt sinnvoll für Menschen, die Daten direkt in Excel anschauen oder bearbeiten möchten.
+
+.Beispiele
+* Grosse Statistik-Tabelle als Parquet-Distribution für SQL-Abfragen mit DuckDB.
+* Zeitreihen oder Messdaten als Parquet, wenn Nutzende nur einzelne Spalten oder Zeiträume auswerten.
+* Zusätzliche Parquet-Distribution neben CSV/XLSX für fortgeschrittene Auswertungen.
+
+[NOTE]
+====
+Parquet eignet sich als zusätzliche Distribution für maschinelle Nutzung und analytische Workflows. Es ersetzt CSV oder XLSX nicht in jedem Fall, ergänzt sie aber dort sinnvoll, wo Performance, Datentypen, Kompression und wiederholbare Auswertung wichtig sind.
+====
+
+== Datenblatt
+
+**Kurzdefinition:** Ein Datenblatt ist die strukturierte Datei, in der die Metadaten und redaktionellen Angaben zu einem Datenangebot erfasst werden.
+
+**Erklärung:** Das Datenblatt wird von der zuständigen Fachstelle erstellt und gepflegt. Es ist die redaktionelle Quelle für die Metadaten, aus denen später Katalogeinträge, Publikationsinformationen oder weitere maschinenlesbare Metadaten erzeugt werden können.
+
+**Abgrenzung / Verhältnis:** Das Datenblatt ist nicht zwingend selbst der Datensatz. Es beschreibt den Datensatz beziehungsweise das Datenthema. Je nach Architektur kann ein Datenblatt genau ein Datenthema, einen Datensatz oder eine Ausgabe beschreiben. Je nach technischer Ausprägung kann es als JSON, XTF oder XML vorliegen.
+
+.Beispiele
+* Strukturierte Metadaten-Datei für ein Datenthema.
+* Datei mit Titel, Beschreibung, Zuständigkeit, Kontakt, Kategorien, Aktualisierungsfrequenz, Nutzungsbedingungen und Angaben zu Distributionen.
+
+[NOTE]
+====
+Datenblatt nennen wir die strukturierte Datei, die im Datenblatt-Editor erstellt und bearbeitet wird.
+====
+
+== Datenblatt-Editor
+
+**Kurzdefinition:** Der Datenblatt-Editor ist die Anwendung, mit der Datenlieferanten ein Datenblatt erstellen und bearbeiten.
+
+**Erklärung:** Die Anwendung führt die Nutzenden durch die relevanten Metadatenfelder, unterstützt Validierung und soll möglichst verhindern, dass unvollständige oder widersprüchliche Angaben entstehen.
+
+**Abgrenzung / Verhältnis:** Der Datenblatt-Editor ist ein Werkzeug im Redaktionsprozess. Er ist nicht der Datenkatalog selbst und nicht zwingend das Publikationssystem.
+
+.Beispiele
+* Webanwendung zum Öffnen, Bearbeiten, Validieren und Exportieren einer Datenblattdatei.
+* Clientseitiger Editor für Fachstellen, der ohne direkte Bearbeitung der strukturierten Datei auskommt.
+
+[NOTE]
+====
+Datenblatt-Editor nennen wir die Anwendung. Datenblatt nennen wir die daraus erzeugte oder darin bearbeitete Datei.
+====
+
+== Rollen und Verantwortlichkeiten
+
+Die folgenden Begriffe stammen aus der Data-Governance-Sprache. Sie beschreiben unterschiedliche Verantwortungsarten: fachliche Verantwortung, fachlich/semantische Pflege und technische Bereitstellung.
+
+Wichtig für unser Projekt: Wenn Data Steward und Data Custodian wie unten definiert werden, sind sie bei uns nicht dieselbe Stelle beziehungsweise nicht dieselbe Person. Sie arbeiten eng zusammen, haben aber unterschiedliche Verantwortlichkeiten.
+
+=== Data Owner / Datenherr / Zuständige Stelle
+
+**Kurzdefinition:** Der Data Owner trägt die fachliche Verantwortung für die Daten. Auf Deutsch kann im Projektkontext auch Datenherr gesagt werden; im geoinformationsrechtlichen Kontext ist oft Zuständige Stelle anschlussfähiger.
+
+**Erklärung:** Der Data Owner entscheidet oder verantwortet fachlich, ob ein Datenangebot publiziert werden darf, welche fachliche Bedeutung die Daten haben, wer zuständig ist, welche Qualitätsanforderungen gelten und welche Zugangs- oder Nutzungsbedingungen relevant sind.
+
+**Abgrenzung / Verhältnis:** Das Geoinformationsrecht verwendet nicht zwingend die englischen Data-Governance-Begriffe. Dort ist häufig von der zuständigen Stelle die Rede. Im Projekt können Data Owner, Datenherr und zuständige Stelle je nach Kontext dieselbe fachliche Verantwortungsrolle meinen, sollten aber bewusst verwendet werden.
+
+.Beispiele
+* Die Fachstelle Statistik ist Data Owner für Einwohnerstatistiken.
+* Die für eine Geodatenebene zuständige Fachstelle ist Data Owner für diese Daten.
+* Bei gesetzlichen Aufgaben kann die Zuständigkeit direkt aus einer Verordnung, einem Gesetz oder einem Leistungsauftrag folgen.
+
+[NOTE]
+====
+Für die Kommunikation mit Fachstellen ist Zuständige Stelle oft der anschlussfähigste Begriff. Datenherr ist als verständliche deutsche Entsprechung für Data Owner möglich.
+====
+
+=== Data Steward
+
+**Kurzdefinition:** Der Data Steward sorgt für die fachliche, semantische und redaktionelle Qualität der Daten und Metadaten.
+
+**Erklärung:** Der Data Steward arbeitet nahe am Inhalt. Er oder sie klärt Begriffe, Attributbedeutungen, fachliche Regeln, Beschreibungen, Kategorien, Aktualität und Verständlichkeit. Der Data Steward achtet darauf, dass Daten und Metadaten fachlich korrekt, konsistent und für Nutzende nachvollziehbar sind.
+
+**Abgrenzung / Verhältnis:** Der Data Steward betreibt nicht primär die technische Plattform. Er oder sie ist auch nicht automatisch die Stelle, die Server, Datenbanken, Schnittstellen oder Pipelines administriert. Die Rolle liegt fachlich zwischen Data Owner und technischer Umsetzung: Sie übersetzt fachliche Anforderungen in saubere Daten- und Metadatenpflege.
+
+.Beispiele
+* Eine Fachperson prüft, ob Titel, Beschreibung, Kategorien und Aktualisierungsfrequenz im Datenblatt fachlich stimmen.
+* Eine metadatenverantwortliche Person stellt sicher, dass externe Nutzende den Inhalt eines Datenthemas verstehen.
+* Eine Fachperson klärt, was ein Attribut bedeutet und ob dessen Beschreibung korrekt ist.
+
+[NOTE]
+====
+Bei uns ist der Data Steward nicht der Data Custodian. Steward = fachliche/semantische/redaktionelle Qualität und Verständlichkeit.
+====
+
+=== Data Custodian
+
+**Kurzdefinition:** Der Data Custodian sorgt für die technische Aufbewahrung, Verarbeitung, Bereitstellung, Sicherheit und Verfügbarkeit der Daten.
+
+**Erklärung:** Der Data Custodian betreibt oder betreut die technische Infrastruktur: Datenbanken, Dateispeicher, Schnittstellen, Pipelines, Publikationsprozesse, Zugriffsmechanismen, Backups, technische Überwachung und technische Fehlerbehebung.
+
+**Abgrenzung / Verhältnis:** Der Data Custodian entscheidet nicht über die fachliche Bedeutung, Publikationsfreigabe oder inhaltliche Korrektheit der Daten. Diese Verantwortung liegt beim Data Owner beziehungsweise bei der zuständigen Stelle; die fachlich/semantische Pflege liegt beim Data Steward.
+
+.Beispiele
+* Ein GIS-/IT-Team betreibt die Datenbank, die Downloadprozesse und die APIs.
+* Ein Plattformteam sorgt dafür, dass CSV-, Parquet- oder GeoPackage-Dateien regelmässig erzeugt und publiziert werden.
+* Ein Betriebsdienst überwacht Schnittstellen, Speicherorte, Zugriffe und technische Fehler.
+
+[NOTE]
+====
+Bei uns ist der Data Custodian nicht der Data Steward. Custodian = technische Bereitstellung, Betrieb, Sicherheit und Verfügbarkeit.
+====
+
+=== Abgrenzung Data Steward und Data Custodian
+
+[cols="1,2,2",options="header"]
+|===
+|Aspekt |Data Steward |Data Custodian
+
+|Fokus
+|Bedeutung, Qualität, Verständlichkeit und fachliche Konsistenz.
+|Technische Speicherung, Verarbeitung, Betrieb und Verfügbarkeit.
+
+|Typische Fragen
+|Was bedeuten die Attribute? Ist die Beschreibung korrekt? Ist die Aktualität plausibel?
+|Wo liegen die Daten? Läuft die Pipeline? Funktionieren Download, API, Backup und Monitoring?
+
+|Bei uns
+|Eigene fachlich/redaktionelle Rolle.
+|Eigene technische/betriebliche Rolle; nicht dieselbe Stelle/Person wie der Steward.
+|===
+
+== Entscheidungsregeln
+
+[cols="1,3",options="header"]
+|===
+|Begriff / Regel |Verwendung
+
+|Datenthema verwenden, wenn
+|das fachliche Datenangebot gemeint ist und die Formulierung für Fachstellen oder Nutzende verständlich sein soll.
+
+|Datensatz verwenden, wenn
+|das Katalogobjekt, die Metadaten-Einheit oder eine DCAT-nahe Modellierung gemeint ist.
+
+|Datensatz-Serie verwenden, wenn
+|mehrere zusammengehörige Datensätze oder Ausgaben nach einem wiederkehrenden Muster publiziert werden.
+
+|Ausgabe verwenden, wenn
+|ein konkreter Jahrgang, Stichtag, Datenstand oder Publikationslauf innerhalb einer Serie gemeint ist.
+
+|Distribution verwenden, wenn
+|ein Format, Download, Dienst, API oder eine sonstige technische Bereitstellungsform gemeint ist.
+
+|Parquet verwenden, wenn
+|Daten maschinell, wiederholbar und performant ausgewertet werden sollen, besonders bei grösseren Tabellen oder analytischen Workflows.
+
+|CSV verwenden, wenn
+|ein sehr einfaches, breit verständliches Austauschformat genügt und die Datenmenge überschaubar ist.
+
+|XLSX verwenden, wenn
+|Menschen die Daten manuell in einer Tabellenkalkulation anschauen, filtern oder bearbeiten sollen.
+
+|Datenblatt verwenden, wenn
+|die strukturierte Datei mit den redaktionellen Metadaten gemeint ist.
+
+|Datenblatt-Editor verwenden, wenn
+|die Anwendung zur Pflege dieser Datei gemeint ist.
+
+|Zuständige Stelle / Datenherr verwenden, wenn
+|die fachlich verantwortliche Stelle gemeint ist.
+
+|Data Steward verwenden, wenn
+|die fachliche/semantische Qualität, Verständlichkeit und Korrektheit der Daten und Metadaten gemeint ist.
+
+|Data Custodian verwenden, wenn
+|die technische Speicherung, Verarbeitung, Bereitstellung, Schnittstellen, Zugriffe oder Betriebsverantwortung gemeint sind.
+|===
+
+== Merksätze
+
+* Ein Datenthema ist das, was Nutzende im Portal suchen.
+* Ein Datensatz ist das, was wir mit Metadaten beschreiben.
+* Eine Datensatz-Serie bündelt mehrere zusammengehörige Datensätze oder Ausgaben.
+* Eine Ausgabe ist ein einzelner konkreter Datenstand innerhalb einer Serie.
+* Eine Distribution ist die Datei, Schnittstelle oder technische Form, über die der Datensatz genutzt wird.
+* Parquet ist eine besonders geeignete Distribution für performante maschinelle Auswertungen.
+* Ein Datenblatt ist die strukturierte Datei, mit der die Metadaten redaktionell gepflegt werden.
+* Der Datenblatt-Editor ist das Werkzeug zur Bearbeitung des Datenblatts.
+* Der Data Owner / Datenherr / die zuständige Stelle trägt die fachliche Verantwortung.
+* Der Data Steward sorgt für fachliche, semantische und redaktionelle Qualität.
+* Der Data Custodian sorgt für technische Bereitstellung, Sicherheit und Betrieb.
+* Bei uns sind Data Steward und Data Custodian bei dieser Definition nicht dieselbe Stelle beziehungsweise nicht dieselbe Person.

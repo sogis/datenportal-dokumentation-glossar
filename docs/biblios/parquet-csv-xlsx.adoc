@@ -1,0 +1,50 @@
+= Parquet, CSV und XLSX
+:description: Einordnung von Parquet, CSV und XLSX als Distributionen im Datenportal.
+
+Diese Seite erklärt die wichtigsten tabellarischen Formate im Datenportal und wann welches Format sinnvoll ist.
+
+== Parquet
+
+include::_partials/begriff-parquet.adoc[]
+
+Parquet ist besonders praktisch für Auswertungen, weil Analysewerkzeuge nur die benötigten Spalten lesen müssen. Bei grossen Tabellen kann das Abfragen, Filtern und Aggregieren deutlich effizienter sein als bei zeilenorientierten Textformaten.
+
+Parquet speichert Datentypen und Schema mit, unterstützt Kompression und ist in vielen Analysewerkzeugen gut nutzbar, zum Beispiel mit DuckDB, Python/Pandas, Polars, Spark oder modernen Data-Lake-Werkzeugen.
+
+== Abgrenzung zu CSV
+
+CSV bleibt sinnvoll für einfache, sehr breit verständliche Exporte. Es ist leicht zu öffnen und gut als einfaches Austauschformat geeignet.
+
+Gegenüber CSV ist Parquet robuster, weil Datentypen, Schema und Kompression Teil des Formats sind. Typische CSV-Probleme wie Trennzeichen, Encoding, Dezimaltrennzeichen oder fehlende Typinformation werden reduziert.
+
+== Abgrenzung zu XLSX
+
+XLSX bleibt sinnvoll für Menschen, die Daten direkt in Excel anschauen, filtern oder bearbeiten möchten.
+
+Gegenüber XLSX ist Parquet für automatisierte, wiederholbare und grössere Auswertungen besser geeignet, weil keine Tabellenkalkulationslogik, Formatierungen, Formeln oder mehrere Arbeitsblätter interpretiert werden müssen.
+
+== Beispiele für Parquet im Datenportal
+
+* Grosse Statistik-Tabelle als Parquet-Distribution für SQL-Abfragen mit DuckDB.
+* Zeitreihen oder Messdaten als Parquet, wenn Nutzende nur einzelne Spalten oder Zeiträume auswerten.
+* Zusätzliche Parquet-Distribution neben CSV/XLSX für fortgeschrittene Auswertungen.
+
+== Entscheidungsregeln
+
+[cols="1,3",options="header"]
+|===
+|Format |Empfehlung
+
+|Parquet
+|Verwenden, wenn Daten maschinell, wiederholbar und performant ausgewertet werden sollen, besonders bei grösseren Tabellen oder analytischen Workflows.
+
+|CSV
+|Verwenden, wenn ein sehr einfaches, breit verständliches Austauschformat genügt und die Datenmenge überschaubar ist.
+
+|XLSX
+|Verwenden, wenn Menschen die Daten manuell in einer Tabellenkalkulation anschauen, filtern oder bearbeiten sollen.
+|===
+
+== Projektregel
+
+Parquet eignet sich als zusätzliche Distribution für maschinelle Nutzung und analytische Workflows. Es ersetzt CSV oder XLSX nicht in jedem Fall, ergänzt sie aber dort sinnvoll, wo Performance, Datentypen, Kompression und wiederholbare Auswertung wichtig sind.
