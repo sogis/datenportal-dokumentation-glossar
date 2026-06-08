@@ -1,0 +1,25 @@
+:lang: de
+:imagesdir: images
+:example-caption!:
+:table-caption: Tabelle
+:figure-caption: Abbildung
+:note-caption: Hinweis
+:tip-caption: Tipp
+:xrefstyle: full
+:chapter-refsig: Kapitel
+:section-refsig: Kapitel
+:doctype: book
+:revdate: {localdate}
+:author: Amt für Geoinformation Kanton Solothurn
+
+= Glossar Datenportal
+
+include::glossar_0_vorwort.adoc[]
+
+include::glossar_1_begriffe_im_ueberblick.adoc[]
+
+include::glossar_2_glossar.adoc[]
+
+include::glossar_3_rollen_und_verantwortlichkeiten.adoc[]
+
+include::glossar_4_entscheidungsregeln_und_merksaetze.adoc[]
