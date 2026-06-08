@@ -1,0 +1,13 @@
+== Vorwort
+
+Dieses Glossar legt die wichtigsten Begriffe für das Datenportal-Projekt fest. Es soll helfen, dass Fachstellen, Datenlieferanten, Entwicklung, Betrieb und Metadatenverantwortliche dieselben Begriffe gleich verwenden.
+
+Die Definitionen sind bewusst praxisnah formuliert. Sie sind als Projektvokabular gedacht und können später mit formalen Referenzen, zum Beispiel DCAT-AP-CH, rechtlichen Grundlagen oder internen Weisungen, ergänzt werden.
+
+Stand dieser Arbeitsfassung: 29. Mai 2026.
+
+=== Grundsatz für die Sprache im Projekt
+
+Im Portal und in der Zusammenarbeit mit Fachstellen verwenden wir vorzugsweise verständliche fachliche Begriffe. «Datenthema» ist der bessere Alltagsbegriff, wenn das fachliche Datenangebot gemeint ist. «Datensatz» verwenden wir, wenn die Metadaten-Einheit, das Katalogobjekt oder die DCAT-nahe Modellierung gemeint ist.
+
+In einfachen Fällen gilt: ein Datenthema entspricht einem Datensatz. Bei Serien, Ausgaben und mehreren technischen Bereitstellungsformen lohnt sich die genauere Unterscheidung.

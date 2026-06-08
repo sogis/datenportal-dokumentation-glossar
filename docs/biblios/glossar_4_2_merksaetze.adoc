@@ -1,0 +1,14 @@
+=== Merksätze
+
+* Ein Datenthema ist das, was Nutzende im Portal suchen.
+* Ein Datensatz ist das, was wir mit Metadaten beschreiben.
+* Eine Datensatz-Serie bündelt mehrere zusammengehörige Datensätze oder Ausgaben.
+* Eine Ausgabe ist ein einzelner konkreter Datenstand innerhalb einer Serie.
+* Eine Distribution ist die Datei, Schnittstelle oder technische Form, über die der Datensatz genutzt wird.
+* Parquet ist eine besonders geeignete Distribution für performante maschinelle Auswertungen.
+* Ein Datenblatt ist die strukturierte Datei, mit der die Metadaten redaktionell gepflegt werden.
+* Der Datenblatt-Editor ist das Werkzeug zur Bearbeitung des Datenblatts.
+* Der Data Owner, der Datenherr oder die zuständige Stelle trägt die fachliche Verantwortung.
+* Der Data Steward sorgt für fachliche, semantische und redaktionelle Qualität.
+* Der Data Custodian sorgt für technische Bereitstellung, Sicherheit und Betrieb.
+* Bei uns sind Data Steward und Data Custodian bei dieser Definition nicht dieselbe Stelle beziehungsweise nicht dieselbe Person.

@@ -1,0 +1,18 @@
+=== Ausgabe innerhalb einer Serie
+
+Kurzdefinition::
+Eine Ausgabe ist ein einzelner konkreter Datensatz innerhalb einer Datensatz-Serie.
+
+Erklärung::
+Sie beantwortet die Frage: Welche konkrete Ausgabe der Serie ist gemeint? Eine Ausgabe kann sich durch Jahr, Stichtag, Erhebungsperiode, Version, Publikationslauf oder Datenstand unterscheiden.
+
+Abgrenzung / Verhältnis::
+Eine Ausgabe ist fachlich ein Datensatz. Sie kann wiederum mehrere Distributionen haben, zum Beispiel CSV, GeoPackage, WMS oder API.
+
+Beispiele::
+* Orthofoto 2025 als Ausgabe der Serie Orthofotos
+* Einwohnerstatistik 2024 als Ausgabe der Serie Einwohnerstatistik
+* Gemeindefinanzen Rechnungsjahr 2023 als Ausgabe der Serie Gemeindefinanzen
+
+Projektregel::
+Im Portal verwenden wir «Ausgabe», wenn eine einzelne konkrete Publikation innerhalb einer Serie gemeint ist. Alternativ kann präziser von «Datensatz-Ausgabe» gesprochen werden.

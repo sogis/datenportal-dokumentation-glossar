@@ -1,0 +1,18 @@
+=== Parquet
+
+Kurzdefinition::
+Parquet ist ein offenes, spaltenorientiertes und komprimiertes Dateiformat für tabellarische beziehungsweise strukturierte Daten.
+
+Erklärung::
+Parquet ist besonders praktisch für Auswertungen, weil Analysewerkzeuge nur die benötigten Spalten lesen müssen. Bei grossen Tabellen kann das Abfragen, Filtern und Aggregieren deutlich effizienter sein als bei zeilenorientierten Textformaten. Parquet speichert Datentypen und Schema mit, unterstützt Kompression und ist in vielen Analysewerkzeugen gut nutzbar, zum Beispiel mit DuckDB, Python/Pandas, Polars, Spark oder modernen Data-Lake-Werkzeugen.
+
+Abgrenzung / Verhältnis::
+Parquet ist nicht primär ein Format zum manuellen Bearbeiten in einer Tabellenkalkulation. Gegenüber CSV ist Parquet robuster, weil Datentypen, Schema und Kompression Teil des Formats sind und typische CSV-Probleme wie Trennzeichen, Encoding, Dezimaltrennzeichen oder fehlende Typinformation reduziert werden. Gegenüber XLSX ist Parquet für automatisierte, wiederholbare und grössere Auswertungen besser geeignet, weil es keine Tabellenkalkulationslogik, Formatierungen, Formeln oder mehrere Arbeitsblätter interpretieren muss. CSV bleibt sinnvoll für einfache, sehr breit verständliche Exporte; XLSX bleibt sinnvoll für Menschen, die Daten direkt in Excel anschauen oder bearbeiten möchten.
+
+Beispiele::
+* Grosse Statistik-Tabelle als Parquet-Distribution für SQL-Abfragen mit DuckDB
+* Zeitreihen oder Messdaten als Parquet, wenn Nutzende nur einzelne Spalten oder Zeiträume auswerten
+* Zusätzliche Parquet-Distribution neben CSV/XLSX für fortgeschrittene Auswertungen
+
+Projektregel::
+Parquet eignet sich als zusätzliche Distribution für maschinelle Nutzung und analytische Workflows. Es ersetzt CSV oder XLSX nicht in jedem Fall, ergänzt sie aber dort sinnvoll, wo Performance, Datentypen, Kompression und wiederholbare Auswertung wichtig sind.

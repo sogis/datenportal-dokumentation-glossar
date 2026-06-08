@@ -1,0 +1,50 @@
+== Begriffe im Überblick
+
+[cols="1,2,2", options="header"]
+|===
+| Begriff | Kurzdefinition | Leitfrage
+
+| Datenthema
+| Fachliches Datenangebot im Portal.
+| Worum geht es fachlich?
+
+| Dataset / Datensatz
+| Beschriebene Sammlung von Daten mit eigenen Metadaten.
+| Welche Daten werden beschrieben?
+
+| Dataset-Serie / Datensatz-Serie
+| Gruppe zusammengehöriger Datensätze oder Ausgaben.
+| Gibt es eine wiederkehrende Reihe?
+
+| Ausgabe innerhalb einer Serie
+| Konkreter Datensatz innerhalb einer Serie.
+| Welcher Jahrgang, Stichtag oder Datenstand ist gemeint?
+
+| Distribution
+| Technische Bereitstellungsform eines Datensatzes.
+| Wie bekomme oder nutze ich die Daten?
+
+| Parquet
+| Spaltenorientiertes, komprimiertes Dateiformat für effiziente Auswertungen.
+| Welches Format eignet sich für performante Analysen?
+
+| Datenblatt
+| Strukturierte Metadaten-Datei mit den redaktionellen Angaben eines Datenangebots.
+| Welche Angaben liefert der Datenlieferant?
+
+| Datenblatt-Editor
+| Anwendung zum Erstellen und Bearbeiten des Datenblatts.
+| Wo werden die Angaben erfasst?
+
+| Data Owner / Datenherr / Zuständige Stelle
+| Fachlich verantwortliche Stelle für die Daten.
+| Wer trägt die fachliche Verantwortung?
+
+| Data Steward
+| Rolle für fachliche, semantische und redaktionelle Datenqualität.
+| Wer sorgt dafür, dass Inhalt und Beschreibung stimmen?
+
+| Data Custodian
+| Rolle für technische Aufbewahrung, Betrieb und Bereitstellung.
+| Wer sorgt technisch dafür, dass die Daten verfügbar sind?
+|===

@@ -1,0 +1,13 @@
+== Rollen und Verantwortlichkeiten
+
+Die folgenden Begriffe stammen aus der Data-Governance-Sprache. Sie beschreiben unterschiedliche Verantwortungsarten: fachliche Verantwortung, fachlich/semantische Pflege und technische Bereitstellung. Im Projekt sollten diese Rollen bewusst getrennt beschrieben werden.
+
+Wichtig für unser Projekt: Wenn Data Steward und Data Custodian wie unten definiert werden, sind sie bei uns nicht dieselbe Stelle beziehungsweise nicht dieselbe Person. Sie arbeiten eng zusammen, haben aber unterschiedliche Verantwortlichkeiten.
+
+include::glossar_3_1_data_owner.adoc[]
+
+include::glossar_3_2_data_steward.adoc[]
+
+include::glossar_3_3_data_custodian.adoc[]
+
+include::glossar_3_4_abgrenzung_steward_custodian.adoc[]

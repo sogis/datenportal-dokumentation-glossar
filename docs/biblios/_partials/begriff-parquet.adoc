@@ -1,5 +1,0 @@
-[sidebar]
-.Begriffsklärung: Parquet
---
-**Parquet** ist ein offenes, spaltenorientiertes und komprimiertes Dateiformat für tabellarische beziehungsweise strukturierte Daten. Es eignet sich besonders für maschinelle und performante Auswertungen.
---

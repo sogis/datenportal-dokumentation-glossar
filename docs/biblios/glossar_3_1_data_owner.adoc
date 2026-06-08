@@ -1,0 +1,18 @@
+=== Data Owner / Datenherr / Zuständige Stelle
+
+Kurzdefinition::
+Der Data Owner trägt die fachliche Verantwortung für die Daten. Auf Deutsch kann im Projektkontext auch «Datenherr» gesagt werden; im geoinformationsrechtlichen Kontext ist oft «Zuständige Stelle» anschlussfähiger.
+
+Erklärung::
+Der Data Owner entscheidet oder verantwortet fachlich, ob ein Datenangebot publiziert werden darf, welche fachliche Bedeutung die Daten haben, wer zuständig ist, welche Qualitätsanforderungen gelten und welche Zugangs- oder Nutzungsbedingungen relevant sind.
+
+Abgrenzung / Verhältnis::
+Das Geoinformationsrecht verwendet nicht zwingend die englischen Data-Governance-Begriffe. Dort ist häufig von der zuständigen Stelle die Rede. Im Projekt können Data Owner, Datenherr und zuständige Stelle je nach Kontext dieselbe fachliche Verantwortungsrolle meinen, sollten aber bewusst verwendet werden.
+
+Beispiele::
+* Die Fachstelle Statistik ist Data Owner für Einwohnerstatistiken.
+* Die für eine Geodatenebene zuständige Fachstelle ist Data Owner für diese Daten.
+* Bei gesetzlichen Aufgaben kann die Zuständigkeit direkt aus einer Verordnung, einem Gesetz oder einem Leistungsauftrag folgen.
+
+Projektregel::
+Für die Kommunikation mit Fachstellen ist «Zuständige Stelle» oft der anschlussfähigste Begriff. «Datenherr» ist als verständliche deutsche Entsprechung für Data Owner möglich.

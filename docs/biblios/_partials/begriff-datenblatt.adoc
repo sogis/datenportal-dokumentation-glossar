@@ -1,5 +1,0 @@
-[sidebar]
-.Begriffsklärung: Datenblatt
---
-Ein **Datenblatt** ist die strukturierte Datei, in der die Metadaten und redaktionellen Angaben zu einem Datenangebot erfasst und gepflegt werden. Je nach technischer Ausprägung kann das Datenblatt als JSON, XTF oder XML vorliegen.
---

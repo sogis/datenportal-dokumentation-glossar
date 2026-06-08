@@ -1,0 +1,17 @@
+=== Datenblatt-Editor
+
+Kurzdefinition::
+Der Datenblatt-Editor ist die Anwendung, mit der Datenlieferanten ein Datenblatt erstellen und bearbeiten.
+
+Erklärung::
+Die Anwendung führt die Nutzenden durch die relevanten Metadatenfelder, unterstützt Validierung und soll möglichst verhindern, dass unvollständige oder widersprüchliche Angaben entstehen.
+
+Abgrenzung / Verhältnis::
+Der Datenblatt-Editor ist ein Werkzeug im Redaktionsprozess. Er ist nicht der Datenkatalog selbst und nicht zwingend das Publikationssystem.
+
+Beispiele::
+* Webanwendung zum Öffnen, Bearbeiten, Validieren und Exportieren einer Datenblatt-Datei
+* Clientseitiger Editor für Fachstellen, der ohne direkte Bearbeitung der strukturierten Metadaten-Datei auskommt
+
+Projektregel::
+«Datenblatt-Editor» nennen wir die Anwendung. «Datenblatt» nennen wir die daraus erzeugte oder darin bearbeitete Datei.
