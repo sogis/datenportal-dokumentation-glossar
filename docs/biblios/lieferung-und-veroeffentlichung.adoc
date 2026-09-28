@@ -1,0 +1,26 @@
+[[lieferung-und-veroeffentlichung]]
+== Lieferung und Veröffentlichung
+
+[cols="1,3",options="header"]
+|===
+|Datei oder Begriff |Bedeutung
+|CSV
+|Datei mit den eigentlichen Tabellendaten. Sie ist das Anlieferungsformat für Daten.
+|XTF
+|Dateiformat, in das der Datenblatt-Editor Metadaten exportiert. Die XTF-Datei enthält das Datenblatt, nicht die CSV-Daten.
+|XLSX und Parquet
+|Die Verarbeitung erzeugt diese Dateien aus der angelieferten CSV. Sie müssen nicht zusätzlich angeliefert werden. Parquet eignet sich besonders für maschinelle Auswertungen.
+|Distribution
+|Technische Bereitstellungsform eines Datensatzes, zum Beispiel als CSV-, XLSX- oder Parquet-Download.
+|===
+
+=== Vom Datenangebot zum sichtbaren Portalstand
+
+. Das Fachamt bereitet Daten und Metadaten vor und liefert CSV und Datenblatt an.
+. AGI prüft, ob die Dateien technisch verarbeitet werden können. AFIN prüft die Metadaten und die fachliche Eignung zur Veröffentlichung.
+. Nach erfolgreicher Prüfung erteilt AFIN die fachliche Freigabe.
+. AGI veröffentlicht die Daten technisch und sorgt dafür, dass der neue Stand im Portal geladen wird.
+
+Eine technische Prüfung oder ein erfolgreicher Verarbeitungslauf ersetzt die
+fachliche Freigabe nicht. Eine Veröffentlichung ist zudem nicht zwingend sofort
+im Portal sichtbar: Sodata muss den neuen Stand laden.

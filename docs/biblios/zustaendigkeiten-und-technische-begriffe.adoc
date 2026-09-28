@@ -1,0 +1,34 @@
+[[zustaendigkeiten-und-technische-begriffe]]
+== Zuständigkeiten und technische Begriffe
+
+=== Wer macht was?
+
+[cols="1,3",options="header"]
+|===
+|Beteiligte |Aufgabe im Publikationsprozess
+|Fachamt / Datenlieferant
+|Wählt das Datenangebot aus, verantwortet dessen Inhalt und Aktualität und liefert die vereinbarten Daten und Metadaten.
+|AFIN
+|Der Statistikdienst des Amts für Finanzen unterstützt die Metadatenerfassung, prüft die fachliche Eignung und den Datenschutz und erteilt die fachliche Freigabe.
+|AGI
+|Das Amt für Geoinformation unterstützt bei technischen Fragen, prüft die Verarbeitbarkeit und verantwortet die technische Integration und Veröffentlichung.
+|===
+
+=== Begriffe für Integration und Betrieb
+
+[cols="1,3",options="header"]
+|===
+|Begriff |Bedeutung
+|Seed-Lauf
+|Liest das Themenrepo und erzeugt oder aktualisiert daraus die Jenkins-Jobs. Ein Seed-Lauf veröffentlicht keine Daten.
+|Datenblatt aus dem Repository übernehmen
+|Übernimmt gezielt ein im Themenrepo gepflegtes Datenblatt in den angenommenen Metadatenbestand. Dabei werden keine Datendateien hochgeladen. Das ist ein eigener Arbeitsschritt und nicht der Seed-Lauf.
+|Publikationsbestand
+|Der in S3 angenommene Veröffentlichungsstand. Dazu gehören die Datenblattsammlung und die DuckDB sowie – falls vorhanden – Katalog, Downloads und RDF.
+|Manifest (`current.json`)
+|Verweist auf die aktive Generation der versionierten Datenblattsammlung, des Katalogs und der DuckDB. Downloads und RDF liegen ausserhalb dieses gemeinsamen Manifestwechsels.
+|Portalstand
+|Der von einer Sodata-Instanz geladene Katalog- und Suchstand. Er kann hinter dem aktuellen Publikationsbestand liegen.
+|Reload
+|Lädt den aktuellen Publikationsbestand in Sodata, damit der Portalstand aktualisiert wird.
+|===

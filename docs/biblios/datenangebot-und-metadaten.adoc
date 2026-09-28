@@ -1,0 +1,28 @@
+[[datenangebot-und-metadaten]]
+== Datenangebot und Metadaten
+
+Ein *Datenangebot* ist das fachliche Angebot, das ein Amt im Datenportal
+bereitstellt. Die Architektur verwendet dafür auch den Begriff *Datenthema*.
+Im Katalog werden Datenangebote als Datensätze oder Datensatzserien beschrieben.
+
+[cols="1,3",options="header"]
+|===
+|Begriff |Bedeutung
+|Datensatz
+|Katalogeinheit, die eine bestimmte Sammlung von Daten mit eigenen Metadaten beschreibt. Ein Datensatz ist nicht mit einer einzelnen Datei gleichzusetzen.
+|Datensatzserie
+|Gruppe zusammengehöriger Datensätze, die nach einem wiederkehrenden Muster veröffentlicht werden, zum Beispiel nach Jahren.
+|Ausgabe
+|Ein konkreter Datenstand innerhalb einer Datensatzserie, zum Beispiel die Ausgabe für 2025. Bei einer Datenlieferung zu einer Serie wird die Ausgabe angegeben.
+|Metadaten
+|Angaben, die Inhalt, Herkunft, Zuständigkeit, Zeitbezug und Aufbau eines Datenangebots erklären.
+|Datenblatt
+|Strukturierte Datei mit den Metadaten zu einem Datensatz oder einer Datensatzserie. Das Datenblatt wird getrennt von den eigentlichen Datendateien angeliefert.
+|Datenblatt-Editor
+|Webanwendung zum Erstellen, Bearbeiten, Prüfen und Exportieren eines Datenblatts.
+|===
+
+Der Editor speichert Entwürfe lokal im Browser. Bearbeiten oder Exportieren ist
+keine Einreichung und veröffentlicht noch keine Daten. Für die Lieferung wird
+das Datenblatt exportiert und zusammen mit den vorgesehenen Datendateien
+übermittelt.

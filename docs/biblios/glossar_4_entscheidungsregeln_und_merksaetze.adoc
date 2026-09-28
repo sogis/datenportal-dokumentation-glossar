@@ -1,5 +1,0 @@
-== Entscheidungsregeln und Merksätze
-
-include::glossar_4_1_entscheidungsregeln.adoc[]
-
-include::glossar_4_2_merksaetze.adoc[]
